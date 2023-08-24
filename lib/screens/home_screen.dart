@@ -64,6 +64,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   (dataProvider.items.isNotEmpty)
                       ? ListView.builder(
+                        reverse: true,
                           shrinkWrap: true,
                           physics: const NeverScrollableScrollPhysics(),
                           itemCount: dataProvider.items.length,
