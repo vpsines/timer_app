@@ -58,8 +58,6 @@ class DataProvider extends ChangeNotifier {
     }
   }
 
-  void saveTimer() {}
-
   void resetControllers() {
     minutesController.clear();
     secondsController.clear();
