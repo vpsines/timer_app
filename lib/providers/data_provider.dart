@@ -50,6 +50,7 @@ class DataProvider extends ChangeNotifier {
       int activeTimers = items.where((item) => item.isActive).length;
       if (activeTimers < 10) {
         addTimer(min, sec);
+        resetControllers();
       } else {
         message = "* Only 10 timers allowed at a time.";
         notifyListeners();
